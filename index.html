@@ -1,3 +1,4 @@
+why doesnt the grid background lineup with the showcase title div:
 <!DOCTYPE html>
 <html lang="en-ca">    
 <head>
@@ -9,9 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Fredericka+the+Great&display=swap" rel="stylesheet">
   
-
   <style>
-
     body {
   margin: auto; 
   padding: 0;
@@ -57,7 +56,22 @@
     .Showcase-title{
       border: 10px solid #9B4522;
         width: 1200px;
-      margin: 10px ;
+      margin-top: 25px ;
+    }
+    
+    .grid_Showcase1 {
+      margin: auto;
+      margin-top: 25px ;
+      display: grid ;
+      grid-template-columns: 50% 50% ;
+      background-color: 9B4522 ;
+    
+    }
+    
+    .grid_Showcase1 div {
+      background-color: #262626 ;
+      padding: 30px;
+      margin: auto;
     }
       
     table {
@@ -109,7 +123,7 @@
     <td>pg.2</td>
   </tr>
          <tr>
-    <td>Showcase 2</td>
+    <td>Showcase hey</td>
     <td>pg.3</td>
   </tr>
          <tr>
@@ -138,6 +152,15 @@
       <h1>
         Showcase 1
       </h1>
+    </div>
+    
+  <div class="grid_Showcase1">
+    <div>
+      <img src="spice1.jpg" alt="blue and gold spice label"> 
+    </div>
+    <div>
+      <img src="spice2.jpg" alt="green and gold spice label">
+    </div>
     </div>
     
   </body>
