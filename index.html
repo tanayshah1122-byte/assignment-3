@@ -1,4 +1,3 @@
-why doesnt the grid background lineup with the showcase title div:
 <!DOCTYPE html>
 <html lang="en-ca">    
 <head>
@@ -6,6 +5,7 @@ why doesnt the grid background lineup with the showcase title div:
 <title>Assignment 3: Website Design</title>
   <meta charset="utf-8">
   <!--Created by Tanay on March 23rd, 2026 -->
+  <!--Ask about img attributes, table requiremnt, link state styling -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ewert&family=Fredericka+the+Great&display=swap" rel="stylesheet">
@@ -26,13 +26,30 @@ why doesnt the grid background lineup with the showcase title div:
     
     .header {
       background-color: #9B4522;
-        width: 1200px;
+      width: 1200px;
     }
   
     .index {
       background-color: #3E5C76;
       width: 1000px ;
       margin: auto;
+    }
+    
+    .index td  {
+      text-align: center;
+      font-family: "Fredericka the Great";
+      font-size: 2em;
+      color: white;
+      padding: 30px;
+    }
+    
+    .index a {
+      color: white;
+      text-decoration: none;
+  }
+
+    .index a:hover {
+      text-decoration: underline;
     }
     
     .About {
@@ -55,8 +72,9 @@ why doesnt the grid background lineup with the showcase title div:
     
     .Showcase-title{
       border: 10px solid #9B4522;
-        width: 1200px;
+      width: 1200px;
       margin-top: 25px ;
+      box-sizing: border-box;
     }
     
     .grid_Showcase1 {
@@ -128,13 +146,7 @@ why doesnt the grid background lineup with the showcase title div:
       padding: 5px;
       
     }
-    td {
-      text-align: center;
-      font-family: "Fredericka the Great";
-      font-size: 2em;
-      color: white;
-      padding: 30px;
-    }
+    
     h1 {
        text-align: center;
       font-family: "ewert", serif;
@@ -162,28 +174,28 @@ why doesnt the grid background lineup with the showcase title div:
     
     
     <div class="index">
-      <table>
+   <table>
   <tr>
-    <td>About me</td>
+    <td><a href="#about">About me</a></td>
     <td>pg.1</td>
   </tr>
-         <tr>
-    <td>Showcase 1</td>
+  <tr>
+    <td><a href="#showcase1">Showcase 1</a></td>
     <td>pg.2</td>
   </tr>
-         <tr>
-    <td>Showcase hey</td>
+  <tr>
+    <td><a href="#showcase2">Showcase 2</a></td>
     <td>pg.3</td>
   </tr>
-         <tr>
-    <td>Contact</td>
+  <tr>
+    <td><a href="#contact">Contact</a></td>
     <td>pg.4</td>
   </tr>
 </table>
     </div>
    
     
-  <div class="About">
+  <div class="About" id="about">
     <h1>
       About Me
     </h1>
@@ -197,7 +209,7 @@ why doesnt the grid background lineup with the showcase title div:
     </p>
     </div>
     
-    <div class="Showcase-title">
+    <div class="Showcase-title" id="showcase1">
       <h1>
         Showcase 1
       </h1>
@@ -216,7 +228,7 @@ why doesnt the grid background lineup with the showcase title div:
     Create a personal website from scratch using HTML and CSS. The website should reflect your interests, hobbies, background, and experiences you're comfortable sharing with the class. This could be a personal portfolio or a site about a hobby or interest that matters to you.
     </div>
     
-  <div class="Showcase-title">
+  <div class="Showcase-title" id="showcase2">
   <h1>Showcase 2</h1>
     </div>
     
