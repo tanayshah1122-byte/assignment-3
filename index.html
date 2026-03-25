@@ -12,6 +12,7 @@
   
   <style>
     body {
+  box-sizing: border-box; 
   margin: auto; 
   padding: 0;
   font-family: "Open Sans", sans-serif;
@@ -69,10 +70,22 @@
      
       
     }
+    .Contact-Buttons-Section {
+      display: flex;
+      margin-top: 45px;
+      width: 1200px;
+      align-items: center;
+      gap: 20px;
+      
+    }
+    
+    .Contact-Buttons {
+      flex: 1;
+    }
     
     .Contact-Button {
       box-sizing: border-box;
-      width: 1200px ;
+      width: 100%;
       background-color: #262626;
       margin: 25px auto;
       padding: 25px;
@@ -89,6 +102,20 @@
     
     .Contact-Button a:hover {
      text-decoration: underline;
+    }
+    
+    .Headshot {
+      display: block;
+      margin: 0 auto;
+      background-color: #262626 ;
+      border-top: 10px solid #c47a4a;     
+      border-left: 10px solid #c47a4a;    
+      border-bottom: 10px solid #4a2010; 
+      border-right: 10px solid #4a2010;   
+      outline-offset: -8px;
+      padding: 10px;
+      width: 600px;
+      height: auto;
     }
     
     .Showcase-title{
@@ -161,6 +188,7 @@
     max-width: 100%;
     height: auto;
     }
+
     
     table {
       width: 100%;
@@ -274,17 +302,24 @@
   <div class="Showcase-title" id="contact">
     <h1>Contact</h1>
     </div>
-    
+  
+    <div class="Contact-Buttons-Section">
+      <div class="Contact-Buttons">
   <div class="Contact-Button">
     <a href="mailto:tanayshah1122@gmail.com">Send Email</a>
     </div>
   
   <div class="Contact-Button">
-    <a href="www.linkedin.com/in/tanay-shah-d1015">Linkedin Profile</a>
+    <a href="https://www.linkedin.com/in/tanay-shah-d1015/">Linkedin Profile</a>
     </div>
   
   <div class="Contact-Button">
     Call: 647-993-9164
     </div>
+      </div>
+  <img class="Headshot" src="0X7A3600.jpg" alt="headshot of Tanay">
+    </div>
+    
+  
   </body>
 </html>
