@@ -25,6 +25,20 @@
       background-color: #E5D5C0 ;
     }
     
+    #splash {
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+
+    #splash.visible {
+      opacity: 1;
+    }
+    .Splash {
+      width: 800px;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+    }
     .header {
       background-color: #9B4522;
       width: 1200px;
@@ -55,12 +69,13 @@
     
     .About {
       width: 600px;
-      background-color: #9B4522;
-      margin-right: auto;   
+      background-color: #9B4522; 
+      margin: auto;
     }
     
     .About-text{
       width: 700px;
+      margin: auto;
       border: 3px solid #9B4522;
       background-color: #262626;
       color: white;
@@ -204,12 +219,12 @@
     }
     
     .About h1 {
-      color: #E5D5C0;
-      text-align: left;
-      padding-left: 15px;
+      color: #262626;
+      text-align: center;
     }
     
     .Header h1 {
+      color: #E5D5C0;
       text-align: center;
       font-family: "ewert", serif;
       font-weight: 100;
@@ -222,7 +237,10 @@
   </head>
   
   <body>
-    <div class="header">
+    
+    <img class="Splash" src="Brand-Logo.png" alt="TSDesigns Logo" id="splash">
+    
+    <div class="header" id="main-header">
       <h1>
      Portfolio
     </h1> 
@@ -233,19 +251,19 @@
    <table>
   <tr>
     <td><a href="#about">About me</a></td>
-    <td>pg.1</td>
+ 
   </tr>
   <tr>
-    <td><a href="#showcase1">Showcase 1</a></td>
-    <td>pg.2</td>
+    <td><a href="#showcase1">Life of Spice</a></td>
+
   </tr>
   <tr>
-    <td><a href="#showcase2">Showcase 2</a></td>
-    <td>pg.3</td>
+    <td><a href="#showcase2">Velvet</a></td>
+
   </tr>
   <tr>
     <td><a href="#contact">Contact</a></td>
-    <td>pg.4</td>
+   
   </tr>
 </table>
     </div>
@@ -267,7 +285,7 @@
     
     <div class="Showcase-title" id="showcase1">
       <h1>
-        Showcase 1
+        Life of Spice Packaging
       </h1>
     </div>
     
@@ -285,7 +303,7 @@
     </div>
     
   <div class="Showcase-title" id="showcase2">
-  <h1>Showcase 2</h1>
+  <h1>Velvet Brand</h1>
     </div>
     
   <img class="Showcase2_1" src="velvet1.jpg" alt="rose logo, brown and cream colorwave">
@@ -327,6 +345,20 @@
   <img class="Headshot" src="0X7A3600.jpg" alt="headshot of Tanay">
     </div>
     
+    <script>
+  const splash = document.getElementById('splash');
+  const header = document.getElementById('main-header');
+
+  // Trigger fade-in
+  requestAnimationFrame(() => {
+    splash.classList.add('visible');
+  });
+
+  // After fade completes, scroll to header
+  splash.addEventListener('transitionend', () => {
+    header.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
   
   </body>
 </html>
